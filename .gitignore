@@ -1,4 +1,4 @@
-# Local .terraform directories
+git # Local .terraform directories
 **/.terraform/*
 .terraform*
 
