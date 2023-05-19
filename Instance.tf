@@ -1,11 +1,22 @@
 # Creating An EC2 Instance
 
-resource "aws_instance" "app_server" {
+# Creating A EC2
+resource "aws_instance" "Ubuntu-App" {
   ami           = "ami-00aa9d3df94c6c354"
   instance_type = "t2.micro"
-  subnet_id     = aws_subnet.testcase_main.id
+  subnet_id     = aws_subnet.ubuntu_main.id
   key_name      = "Kitskat2023"
   tags = {
-    Name = "helloworld"
+    Name = "Ubuntu"
+  }
+}
+
+resource "aws_instance" "Redhat-App" {
+  ami           = "ami-00aa9d3df94c6c354"
+  instance_type = "t2.micro"
+  subnet_id     = aws_subnet.redhat_main.id
+  key_name      = "Kitskat2023"
+  tags = {
+    Name = "Redhat"
   }
 }
