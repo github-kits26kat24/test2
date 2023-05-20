@@ -1,5 +1,8 @@
 # Creating A Routing Table 
 # Resource: aws_route_table
+
+# A route Is Used To Determine Where Network Traffic From The Subnet or Gateway Is Directed.
+# https://registry.terraform.io/providers/hashicorp/aws/3.73.0/docs/resources/route_table
 resource "aws_route_table" "testcase_example" {
   # The Vpc Id
   vpc_id = aws_vpc.testcase_main.id
