@@ -1,5 +1,7 @@
 # Creating An EC2 Instance
 
+# Resource: aws_instance
+# https://registry.terraform.io/providers/hashicorp/aws/3.73.0/docs/resources/instance
 resource "aws_instance" "Ubuntu-App" {
   ami           = "ami-00aa9d3df94c6c354"
   instance_type = "t2.micro"
