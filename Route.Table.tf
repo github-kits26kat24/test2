@@ -1,5 +1,5 @@
 # Creating A Routing Table 
-
+# Resource: aws_route_table
 resource "aws_route_table" "testcase_example" {
   # The Vpc Id
   vpc_id = aws_vpc.testcase_main.id

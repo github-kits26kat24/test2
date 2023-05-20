@@ -1,5 +1,11 @@
+# Creating SECURITY GROUP
+# Resource: aws_security_group
+# https://registry.terraform.io/providers/hashicorp/aws/3.73.0/docs/resources/security_group
 
-
+resource "aws_security_group" "Project03" {
+  name        = "project_two"
+  description = "Allow TLS inbound traffic"
+  vpc_id      = aws_vpc.project03.id
 resource "aws_security_group" "testcase_sg" {
   name        = "testcase_sg"
   description = "Allow TLS inbound traffic"
